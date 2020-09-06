@@ -1,4 +1,14 @@
+
+
 # Dex demo build by substrate
+
+This is a decentralized exchange (DEX) build by substrate.
+
+_**WARNING**_ This project is just for demo/poc/self-learning. The author does not guarantee any availability or stability. And we ***DO NOT*** suggest use it in any production environment.
+
+Any questions, feel free to post an issue.
+
+Please refer to the [wiki](https://github.com/alexxuyang/substrate-dex/wiki) for the detail information. (Continuously updated)
 
 ## Build
 
@@ -52,6 +62,20 @@ yarn start
 ```
 
 Then open the link [http://localhost:3000/#/?rpc=ws://127.0.0.1:9944](http://localhost:3000/#/?rpc=ws://127.0.0.1:9944)
+
+### How to test
+
+Test all the test cases by:
+
+```Rust
+cargo test -p substrate-dex-runtime -- --test-threads=1 --nocapture
+```
+
+Or you can just run one of the test cases by:
+
+```Rust
+cargo test [TEST_CASE_NAME] -p substrate-dex-runtime -- --test-threads=1 --nocapture
+```
 
 ### About next step
 
